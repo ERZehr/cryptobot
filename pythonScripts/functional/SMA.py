@@ -36,9 +36,9 @@ with open(data_file_path, 'r') as file:
 for i in range(len(data) - PERIOD): # edited so we dont have an extra false point
     window = data[i:i+PERIOD]  # Extract the window of prices for the current period
     average = sum(window) / PERIOD  # Calculate the average of the window
-    moving_averages.append(average)  # Add the average to the moving_averages list
+    moving_averages.append(round(average, 2))  # Add the average to the moving_averages list
 
-FILENAME2 = ASSET + "_last_" + DATAQUERY + "_" + RANGE +"s_basicMA" # create a filename
+FILENAME2 = ASSET + "_last_" + DATAQUERY + "_" + RANGE +"s_SMA" # create a filename
 
 with open(FILENAME2, 'w') as file: # write it all to a file
     file.write("Moving Averages:\n")
