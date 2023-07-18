@@ -12,11 +12,11 @@ RANGE = sys.argv[4]  # minutes, hours, days
 
 # Fetch the historical price data based on the specified range
 if RANGE == "minute":
-    DATA = cryptocompare.get_historical_price_minute(ASSET, currency=CURRENCY, limit=LIMIT)
+    DATA = cryptocompare.get_historical_price_minute(ASSET, currency=CURRENCY, limit=str(int(LIMIT)-1))
 elif RANGE == "hour":
-    DATA = cryptocompare.get_historical_price_hour(ASSET, currency=CURRENCY, limit = LIMIT)
+    DATA = cryptocompare.get_historical_price_hour(ASSET, currency=CURRENCY, limit=str(int(LIMIT)-1))
 elif RANGE == "day":
-    DATA = cryptocompare.get_historical_price_day(ASSET, currency=CURRENCY, limit=LIMIT)
+    DATA = cryptocompare.get_historical_price_day(ASSET, currency=CURRENCY, limit=str(int(LIMIT)-1))
 
 list_of_lists = []  # Final list containing timestamp and close value key-value pairs
 for item in DATA:

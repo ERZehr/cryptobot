@@ -41,7 +41,7 @@ for i in range(1, len(data)):
     ema = alpha * data[i] + (1 - alpha) * ema  # Calculate the EMA
     moving_averages.append(round(ema, 2))  # Add the EMA to the moving_averages list
 
-FILENAME2 = ASSET + "_" + str(PERIOD) + "_" + RANGE + "_period_EMA_against_last_" + str(LIMIT) + "_" + RANGE + "s" # create filename
+FILENAME2 = ASSET + "_" + str(PERIOD) + "_" + RANGE + "_EMA_against_last_" + str(LIMIT) + "_" + RANGE + "s" # create filename
 
 with open(FILENAME2, 'w') as file:
     for i, average in enumerate(moving_averages, start=0):

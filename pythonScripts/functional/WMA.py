@@ -10,7 +10,7 @@ PERIOD = int(sys.argv[3])  # moving average period
 LIMIT = int(sys.argv[4])  # desired number of datum
 RANGE = sys.argv[5]  # day, hour, minute
 
-DATAQUERY = str(PERIOD + LIMIT - 2)  # number of datum to query
+DATAQUERY = str(PERIOD + LIMIT - 1)  # number of datum to query
 
 subprocess.run(["bash", "../../bashScripts/functional/getData.sh", ASSET, CURRENCY, DATAQUERY, RANGE])
 
