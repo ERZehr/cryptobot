@@ -8,3 +8,8 @@ python3 ../../pythonScripts/functional/MACD.py $filename12 $filename26 $1 $2 $3 
 mv ${1}_MACD_last_${3}_${4}s ../../data_files/
 rm $filename12
 rm $filename26
+
+# Asset: BTC, ETH, 
+# Currency: USD
+# Data points (must be more than 26): 28, 345
+# Limit: minute, hour, day

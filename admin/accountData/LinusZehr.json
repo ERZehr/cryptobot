@@ -1,0 +1,15 @@
+{
+    "actions": {
+        "0": {
+            "asset": "ETC",
+            "action": "buy",
+            "type": "stop",
+            "quantity": 1111.451,
+            "line": 1.0
+        }
+    },
+    "cash": 9801.69626,
+    "assets": {
+        "ETC": 12.902000000000001
+    }
+}

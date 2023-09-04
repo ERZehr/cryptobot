@@ -1,0 +1,38 @@
+{
+    "user_info": 
+    {
+        "user_id": 
+        {
+            "0":
+            {
+                "user_name": "EvanZehr",
+                "user_password": "FlightsuitM1",
+                "account_path": "~/ccurency/cryptobot/admin/accountData/EvanZehr.json"
+            },
+            "1":
+            {
+                "user_name": "LinusZehr",
+                "user_password": "password0",
+                "account_path": "~/ccurency/cryptobot/admin/accountData/LinusZehr.json"
+            },
+            "2":
+            {
+                "user_name": "SimonZehr",
+                "user_password": "password1",
+                "account_path": "~/ccurency/cryptobot/admin/accountData/SimonZehr.json"
+            },
+            "3":
+            {
+                "user_name": "RobertZehr",
+                "user_password": "password2",
+                "account_path": "~/ccurency/cryptobot/admin/accountData/RobertZehr.json"
+            },
+            "4":
+            {
+                "user_name": "Sim",
+                "user_password": "password",
+                "account_path": "~/ccurency/cryptobot/admin/accountData/Sim.json"
+            }
+        }
+    }
+}   
